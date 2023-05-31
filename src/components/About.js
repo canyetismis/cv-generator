@@ -7,6 +7,7 @@ import { FaBirthdayCake } from "react-icons/fa";
 import { BsMailbox } from "react-icons/bs";
 import { CgSmartphone } from "react-icons/cg";
 import { BiWorld } from "react-icons/bi";
+import { FaGithub } from "react-icons/fa";
 import { MdAlternateEmail } from "react-icons/md";
 import { StraightLine } from "./framework/About/StraightLine";
 
@@ -43,6 +44,7 @@ export const About = (props) => (
       </IconText>
       <IconText icon={<CgSmartphone />}>{props.telephone}</IconText>
       <IconText icon={<BiWorld />}>{props.website}</IconText>
+      <IconText icon={<FaGithub />}>{props.github}</IconText>
       <IconText icon={<IoLogoLinkedin />}>{props.linkedin}</IconText>
       <IconText icon={<MdAlternateEmail />}>{props.email}</IconText>
       <Col xs={12} style={{ marginTop: "1rem" }}>
@@ -60,4 +62,17 @@ export const About = (props) => (
       </Col>
     </Wrapper>
   </div>
+);
+
+export const BlankAbout = () => (
+  <div
+    style={{
+      minHeight: "100%",
+      width: "33%",
+      position: "absolute",
+      backgroundColor: "#003355",
+      color: "beige",
+      display: "inline-block",
+    }}
+  />
 );

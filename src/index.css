@@ -7,18 +7,20 @@
 body {
   margin: 0;
   border: 0;
+  background-color: #282C2F !important;
   font-family: "Helvetica400", Arial, Helvetica, sans-serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 .page {
+  margin-top: 1rem;
   width: 210mm;
   min-height: 297mm;
   background-color: beige;
   position: relative;
-  left: 50%;
-  transform: translateX(-50%);
+  /*left: 50%;
+  transform: translateX(-50%);*/
 }
 
 .progress-bar {
@@ -30,13 +32,17 @@ body {
   margin: 0;
 }
 @media print {
-  html, body {
-      width: 210mm;
-      height: 297mm;
-      margin: 0;
-      border: 0;
+  body * {
+    visibility: hidden;
+  }
+  .page,
+  .page * {
+    visibility: visible;
   }
   .page {
+    width: 210mm; /* A4 width */
+    height: 297mm;
+    margin-top: 0;
     background-color: beige !important;
     -webkit-print-color-adjust: exact;
     -webkit-font-smoothing: antialiased;

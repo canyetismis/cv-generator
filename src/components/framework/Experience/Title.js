@@ -11,7 +11,7 @@ export const Title = (props) => (
             backgroundColor: "#003355",
             color: "beige",
             textAlign: "center",
-            paddingTop: "0.15rem",
+            paddingTop: "0.15rem ",
             paddingBottom: "0.15rem",
             borderRadius: "10px",
           }}
